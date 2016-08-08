@@ -1,0 +1,9 @@
+"DONT BE COMPATIBLE WITH VI
+set nocompatible
+
+"VIM-PLUG
+call plug#begin('~/.vim/plugged')
+Plug 'https://github.com/klen/python-mode'
+Plug 'https://github.com/scrooloose/syntastic'
+call plug#end()
+
