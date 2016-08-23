@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DIR=~/dotfiles
-FILES="vimrc vimrc.bundles"
+FILES="vimrc vimrc.bundles tmux.conf"
 
 echo -n "Updating previous symlinks"
 
