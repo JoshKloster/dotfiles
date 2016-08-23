@@ -70,3 +70,5 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 "Check c++ with c++11
 let g:syntastic_cpp_compiler_options = " -std=c++11"
+"Use eslint with javascript
+let g:syntastic_javascript_checkers = ['eslint']
