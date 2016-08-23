@@ -1,3 +1,11 @@
+"DONT BE COMPATIBLE WITH VI
+set nocompatible
+
+"INCLUDE PACKAGES FILE
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+
 "COLORSCHEME
 colorscheme molokai 
 set t_Co=256
@@ -6,8 +14,8 @@ set t_Co=256
 syntax enable
 
 "SPACES AND TABS
-set tabstop=4 "number of visual spaces per tab
-set softtabstop=4 "number of spaces in tab when editing
+set tabstop=2 "number of visual spaces per tab
+set softtabstop=2 "number of spaces in tab when editing
 set expandtab "tabs are spaces
 
 "UI CONFIG
@@ -45,7 +53,15 @@ nnoremap <space> za
 " jk is escape
 inoremap jk <esc> 
 
-"VIM-PLUG
-call plug#begin('~/.vim/plugged')
-Plug 'https://github.com/klen/python-mode'
-call plug#end()
+"SYNTASTIC
+"RESEARCH AND COMMENT LINES
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+"Check c++ with c++11
+let g:syntastic_cpp_compiler_options = " -std=c++11"
