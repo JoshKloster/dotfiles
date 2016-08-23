@@ -9,6 +9,11 @@ endif
 "COLORSCHEME
 colorscheme molokai 
 set t_Co=256
+" Disable background color erase so that color schemes render
+" properly when inside 256-color tmux and GNU screen.
+if &term =~ '256color'
+        set t_ut=
+endif
 
 "SYNTAX PROCESSING
 syntax enable
