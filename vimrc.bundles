@@ -3,7 +3,7 @@ set nocompatible
 
 "VIM-PLUG
 call plug#begin('~/.vim/plugged')
-Plug 'https://github.com/klen/python-mode'
+Plug 'https://github.com/klen/python-mode', { 'for': 'python' }
 Plug 'https://github.com/scrooloose/syntastic'
 Plug 'https://github.com/mtscout6/syntastic-local-eslint.vim'
 call plug#end()

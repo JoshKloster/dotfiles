@@ -21,6 +21,7 @@ syntax enable
 "SPACES AND TABS
 set tabstop=2 "number of visual spaces per tab
 set softtabstop=2 "number of spaces in tab when editing
+set shiftwidth=2 "number of spaces is indented with reindent operations
 set expandtab "tabs are spaces
 
 "UI CONFIG
