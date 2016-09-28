@@ -23,6 +23,7 @@ set tabstop=2 "number of visual spaces per tab
 set softtabstop=2 "number of spaces in tab when editing
 set shiftwidth=2 "number of spaces is indented with reindent operations
 set expandtab "tabs are spaces
+autocmd FileType make setlocal noexpandtab "prevent vim changing to spaces with makefile
 
 "UI CONFIG
 set number "show line numbers
